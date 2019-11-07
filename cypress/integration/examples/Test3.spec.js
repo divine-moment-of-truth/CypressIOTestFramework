@@ -1,6 +1,8 @@
+/// <reference types="Cypress" />
+
 describe('My First Test Suite', function() {
 	
-	it('My Thrird Test Case', function() {
+	it('My Thrird Test Case - Form Controls', function() {
 
 		Cypress.config('pageLoadTimeout', 16000);
 		// Navigate to https://rahulshettyacademy.com/AutomationPractice/ website

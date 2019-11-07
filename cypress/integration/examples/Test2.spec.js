@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('My First Test Suite', function() {
 	
 	it('My Second Test Case', function() {
