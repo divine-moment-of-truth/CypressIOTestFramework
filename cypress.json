@@ -3,5 +3,6 @@
 	"pageLoadTimeout": 10000,
 	"env": {
 		"url": "https://rahulshettyacademy.com"
-	}
+	},
+	"chromeWebSecurity": false
 }

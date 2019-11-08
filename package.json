@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "runSingleSpec": "npm run test -- --spec \"cypress/integration/examples/Test1.spec.js\"",
+    "runMultipleSpecs": "npm run test -- --spec \"cypress/integration/examples/Test1.spec.js,cypress/integration/examples/Test2.spec.js\"",
+    "recordDashBoardTest": "npm run test -- --record --key keyIdNumber --reporter mochawesome",
+    "GreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
   },
   "author": "Andy Short",
   "license": "ISC",
